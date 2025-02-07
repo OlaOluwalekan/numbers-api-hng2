@@ -17,18 +17,12 @@ export const getNumberFacts = async (req, res) => {
       .json({ number: number || 'undefined', error: true })
   }
 
-  const fact = await axios.get(`http://numbersapi.com/${number}`)
+  const fact = await axios.get(`http://numbersapi.com/${number}/math`)
   const properties = []
   const is_prime = isPrime(number)
   const is_perfect = isPerfect(number)
   if (isArmstrong(number)) {
     properties.push('armstrong')
-  }
-  if (is_perfect) {
-    properties.push('perfect')
-  }
-  if (is_prime) {
-    properties.push('prime')
   }
   if (isEven(number)) {
     properties.push('even')
