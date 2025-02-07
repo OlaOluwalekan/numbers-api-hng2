@@ -58,7 +58,19 @@ Below is a sample JSON response:
 
 1. Clone repository
 
-```bash
-git clone https://github.com/yourusername/number-classification-api.git
-cd number-classification-api
-```
+   ```bash
+   git clone https://github.com/OlaOluwalekan/numbers-api-hng2.git
+   cd numbers-api-hng2
+   ```
+
+1. Instal Dependencies
+
+   ```bash
+   npm install
+   ```
+
+1. Start the server
+   ```bash
+   node server.js
+   ```
+1. Open "localhost:3000/api/classify-number" on your browser
